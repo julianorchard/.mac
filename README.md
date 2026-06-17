@@ -15,7 +15,7 @@ Use this wrapper command to deploy:
 Stow everything:
 
 ```sh
-./jim $(find ./* -prune -type d)
+./jim $(find * -prune -type d)
 ```
 
 ## Brew
