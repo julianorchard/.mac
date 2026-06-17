@@ -9,6 +9,8 @@ brew "fd"
 brew "fzf"
 # Distributed revision control system
 brew "git"
+# GNU Privacy Guard (OpenPGP)
+brew "gnupg"
 # Manage multiple Node.js versions
 brew "nvm"
 # Search tool like grep and The Silver Searcher
