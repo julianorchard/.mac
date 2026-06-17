@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+defaults write com.apple.dock autohide -bool true
+defaults write -g com.apple.swipescrolldirection -bool false
+
+defaults write -g AppleLocale -string "en_GB"
+defaults write -g AppleLanguages -array "en-GB"
+
+defaults write com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID \
+    -string "com.apple.keylayout.British-PC"
