@@ -1,4 +1,9 @@
+tap "hashicorp/tap"
 tap "nikitabobko/tap"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
+# Official Amazon AWS command-line interface
+brew "awscli"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
 # .NET Core
@@ -17,10 +22,10 @@ brew "go"
 brew "go-jsonnet"
 # Manage multiple Node.js versions
 brew "nvm"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.14"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Editor of encrypted files
+brew "sops"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
 # User interface to the TELNET protocol
@@ -29,13 +34,19 @@ brew "telnet"
 brew "tmux"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
+# Terraform
+brew "hashicorp/tap/terraform", trusted: true
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "nikitabobko/tap/aerospace", trusted: true
 # Web browser
 cask "firefox"
 cask "font-comic-shanns-mono-nerd-font"
+# Keyboard customiser
+cask "karabiner-elements"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
+# Use it to gain instant access to operations and complete control over the system
+cask "p4"
 # Visual client for Helix Core
 cask "p4v"
 # Desktop client for Proton Pass

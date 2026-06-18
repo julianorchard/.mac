@@ -31,6 +31,8 @@ export NVM_DIR="${XDG_CONFIG_HOME}/nvm"
 # Locale
 export LANG="en_GB.UTF-8"
 export LC_CTYPE="en_GB.UTF-8"
+# Ripgrep config path
+export RIPGREP_CONFIG_PATH="${XDG_CONFIG_HOME}/ripgrep/config"
 # How do I get the pods? -- AlessioMinerva, 2024
 export KUBE_CONFIG_PATH="${HOME}/.kube/config"
 # Editor
@@ -39,5 +41,7 @@ if command -v nvim >/dev/null 2>&1; then
 else
     export EDITOR="vim"
 fi
+# GNUPG
+export GNUPGHOME="${XDG_CONFIG_HOME}/gnupg"
 
 export PATH

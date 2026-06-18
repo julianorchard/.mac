@@ -113,9 +113,28 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
     outer.top =        0
     outer.right =      10
 
+# NOTE: App IDs can be found with `aerospace list-apps`
+# [[on-window-detected]]
+#     if.app-id = 'com.apple.Terminal'
+#     run = 'move-node-to-workspace 1'
 [[on-window-detected]]
-    if.app-id = 'com.apple.Terminal'
-    run = 'move-node-to-workspace 1'
-[[on-window-detected]]  # TODO: Fix, this isn't firefox for some reason
-    if.app-id = 'Firefox.app'
+    if.app-id = 'org.mozilla.firefox'
     run = 'move-node-to-workspace 2'
+[[on-window-detected]]
+    if.app-id = 'com.microsoft.teams2'
+    run = 'move-node-to-workspace 5'
+[[on-window-detected]]
+    if.app-id = 'com.microsoft.teams'
+    run = 'move-node-to-workspace 5'
+[[on-window-detected]]
+    if.app-id = 'com.tinyspeck.slackmacgap'
+    run = 'move-node-to-workspace 6'
+[[on-window-detected]]
+    if.app-id = 'org.whispersystems.signal-desktop'
+    run = 'move-node-to-workspace 6'
+[[on-window-detected]]
+    if.app-id = 'org.gnu.Emacs'
+    run = 'move-node-to-workspace 7'
+[[on-window-detected]]
+    if.app-id = 'com.spotify.client'
+    run = 'move-node-to-workspace 9'
