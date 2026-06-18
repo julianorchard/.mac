@@ -26,14 +26,14 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
     '''
 
     # i3 wraps focus by default
-    alt-j =         'focus --boundaries-action wrap-around-the-workspace left'
-    alt-k =         'focus --boundaries-action wrap-around-the-workspace down'
-    alt-l =         'focus --boundaries-action wrap-around-the-workspace up'
+    alt-j         = 'focus --boundaries-action wrap-around-the-workspace left'
+    alt-k         = 'focus --boundaries-action wrap-around-the-workspace down'
+    alt-l         = 'focus --boundaries-action wrap-around-the-workspace up'
     alt-semicolon = 'focus --boundaries-action wrap-around-the-workspace right'
 
-    alt-shift-j = 'move left'
-    alt-shift-k = 'move down'
-    alt-shift-l = 'move up'
+    alt-shift-j         = 'move left'
+    alt-shift-k         = 'move down'
+    alt-shift-l         = 'move up'
     alt-shift-semicolon = 'move right'
 
     # Consider using 'join-with' command as a 'split' replacement if you want to enable
@@ -86,12 +86,12 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
     alt-q = 'close'
 
 [mode.resize.binding]
-    h = 'resize width -50'
-    j = 'resize height +50'
-    k = 'resize height -50'
-    l = 'resize width +50'
+    h     = 'resize width -50'
+    j     = 'resize height +50'
+    k     = 'resize height -50'
+    l     = 'resize width +50'
     enter = 'mode main'
-    esc = 'mode main'
+    esc   = 'mode main'
 
 [workspace-to-monitor-force-assignment]
     1 = ['main', 'secondary']
@@ -107,34 +107,31 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
 [gaps]
     inner.horizontal = 5
-    inner.vertical =   5
-    outer.left =       10
-    outer.bottom =     15
-    outer.top =        0
-    outer.right =      10
+    inner.vertical   = 5
+    outer.left       = 10
+    outer.bottom     = 15
+    outer.top        = 0
+    outer.right      = 10
 
 # NOTE: App IDs can be found with `aerospace list-apps`
 # [[on-window-detected]]
 #     if.app-id = 'com.apple.Terminal'
-#     run = 'move-node-to-workspace 1'
+#     run       = 'move-node-to-workspace 1'
 [[on-window-detected]]
     if.app-id = 'org.mozilla.firefox'
-    run = 'move-node-to-workspace 2'
-[[on-window-detected]]
-    if.app-id = 'com.microsoft.teams2'
-    run = 'move-node-to-workspace 5'
-[[on-window-detected]]
-    if.app-id = 'com.microsoft.teams'
-    run = 'move-node-to-workspace 5'
+    run       = 'move-node-to-workspace 2'
 [[on-window-detected]]
     if.app-id = 'com.tinyspeck.slackmacgap'
-    run = 'move-node-to-workspace 6'
+    run       = 'move-node-to-workspace 6'
+[[on-window-detected]]
+    if.app-id = 'com.microsoft.teams2'
+    run       = 'move-node-to-workspace 7'
+[[on-window-detected]]
+    if.app-id = 'com.microsoft.teams'
+    run       = 'move-node-to-workspace 7'
 [[on-window-detected]]
     if.app-id = 'org.whispersystems.signal-desktop'
-    run = 'move-node-to-workspace 6'
-[[on-window-detected]]
-    if.app-id = 'org.gnu.Emacs'
-    run = 'move-node-to-workspace 7'
+    run       = 'move-node-to-workspace 8'
 [[on-window-detected]]
     if.app-id = 'com.spotify.client'
-    run = 'move-node-to-workspace 9'
+    run       = 'move-node-to-workspace 9'
