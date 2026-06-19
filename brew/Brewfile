@@ -55,5 +55,5 @@ cask "proton-pass"
 cask "slack"
 # Music streaming service
 cask "spotify"
-# GPU-accelerated cross-platform terminal emulator and multiplexer
-cask "wezterm"
+# Connect to Windows
+cask "windows-app"
