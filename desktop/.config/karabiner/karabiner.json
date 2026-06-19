@@ -5,7 +5,6 @@
                 "rules": [
                     {
                         "description": "Command+Backspace deletes previous word",
-                        "enabled": true,
                         "manipulators": [
                             {
                                 "from": {
@@ -32,7 +31,7 @@
                         ]
                     },
                     {
-                        "description": "Ctrl+Left/Right moves by word",
+                        "description": "Command+Left/Right moves by word",
                         "enabled": true,
                         "manipulators": [
                             {
@@ -41,7 +40,7 @@
                                     "key_code": "left_arrow",
                                     "modifiers": {
                                         "mandatory": [
-                                            "control"
+                                            "command"
                                         ],
                                         "optional": [
                                             "any"
@@ -63,7 +62,7 @@
                                     "key_code": "right_arrow",
                                     "modifiers": {
                                         "mandatory": [
-                                            "control"
+                                            "command"
                                         ],
                                         "optional": [
                                             "any"
